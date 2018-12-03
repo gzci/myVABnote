@@ -13,6 +13,7 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE dict(_id INTEGER PRIMARY KEY autoincrement ,word,detail)";
+        String sql1 = "CREATE TABLE newdict(_id INTEGER PRIMARY KEY autoincrement ,word,detail)";
         db.execSQL(sql);
     }
 
